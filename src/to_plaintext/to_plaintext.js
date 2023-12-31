@@ -17,6 +17,8 @@ function toPlaintext(buffer) {
             i++;
             while (num--)
                 str += map.get(getInstr(buffer, i));
+        } else if (getInstr(buffer, i) == 0b1010) {
+            str += "[-]";
         } else {
             str += map.get(getInstr(buffer, i));
         }

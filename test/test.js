@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const { fromPlaintext, toPlaintext, toInstructionList } = require("../src/index");
+const { fromPlaintext, toPlaintext, toInstructionList } = require("../src/bcf");
 const { instructionToChar } = require("../src/instruction_list/instruction_set");
 
 const fileNames = fs.readdirSync(path.join(__dirname, "/testPrograms"));
@@ -15,7 +15,7 @@ let isFailure = false;
 
 function padTestId(test) {
     let str = "";
-    let num = maxFilenameSize - test.length + (isFailure ? 2 : 0);
+    let num = maxFilenameSize - test.length + (isFailure ? 3 : 0);
     while (num--)
         str += " ";
     return " " + test + str;

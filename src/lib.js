@@ -1,5 +1,6 @@
 const { initConvert } = require("./from_plaintext/init_compress");
 const { squashMultiples } = require("./from_plaintext/squash_multiples");
+const { squashSet } = require("./from_plaintext/squash_set");
 const { charToInstruction } = require("./instruction_list/instruction_set");
 const { toPlaintext } = require("./to_plaintext/to_plaintext");
 
@@ -8,6 +9,7 @@ const Brain = {
         text = text.replaceAll(/[^[\]+\-,.<>]/g, "");
         text = initConvert(text);
         text = squashMultiples(text);
+        text = squashSet(text);
         return Buffer.concat([Buffer.from("BFC:", "utf-8"), text]);
     },
     toPlaintext(buffer) {
