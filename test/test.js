@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const { fromPlaintext, toPlaintext, toInstructionList } = require("../src/bcf");
+const { fromPlaintext, toPlaintext, toInstructionList } = require("../src/bff");
 const { instructionToChar } = require("../src/instruction_list/instruction_set");
 
 const fileNames = fs.readdirSync(path.join(__dirname, "/testPrograms"));

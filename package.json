@@ -11,15 +11,15 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FluxFlu/bcf.git"
+    "url": "https://github.com/FluxFlu/bff.git"
   },
   "bugs": {
-    "url": "https://github.com/FluxFlu/bcf/issues"
+    "url": "https://github.com/FluxFlu/bff/issues"
   },
-  "homepage": "https://github.com/FluxFlu/bcf#readme",
-  "main": "bcf",
+  "homepage": "https://github.com/FluxFlu/bff#readme",
+  "main": "bff",
   "bin": {
-    "bcf": "./src/bcf.js"
+    "bff": "./src/bff.js"
   },
   "files": [
     "./src/**",
@@ -30,7 +30,7 @@
   "scripts": {
     "test": "node ./test/test.js",
     "lint": "npx eslint ./ --global \"__dirname,process,Buffer\"",
-    "build": "pkg ./src/bcf.js -C=Brotli"
+    "build": "pkg ./src/bff.js -C=Brotli"
   },
   "devDependencies": {
     "eslint": "^8.56.0",

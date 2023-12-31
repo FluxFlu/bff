@@ -5,7 +5,7 @@
 ![Static Badge](https://img.shields.io/badge/License-GPL--3.0-blue)
 
 # CLI Installation
-Pre-built binaries for BCF can be downloaded at [the releases page](https://github.com/FluxFlu/bcf/releases/).
+Pre-built binaries for BFF can be downloaded at [the releases page](https://github.com/FluxFlu/bff/releases/).
 
 It can also be installed using the NPM as follows.
 
@@ -14,19 +14,19 @@ $ npm i braincomp -g
 ```
 
 # Module Installation
-BCF can also be used as a Node.js module that programs can include. This can be done as normal.
+BFF can also be used as a Node.js module that programs can include. This can be done as normal.
 
 ```sh
 $ npm i braincomp
 ```
 
 # Usage
-BCF is run with the syntax `bcf [file.bf] options`.
+BFF is run with the syntax `bff [file.bf] options`.
 
 ```sh
-$ bcf mandelbrot.bf --compress
+$ bff mandelbrot.bf --compress
 ```
 
 # Licensing
 
-BCF is licensed under the [GPL-3.0](https://github.com/FluxFlu/bcf/blob/main/LICENSE). A copy is included with the compiler.
+BFF is licensed under the [GPL-3.0](https://github.com/FluxFlu/bff/blob/main/LICENSE). A copy is included with the compiler.

@@ -48,7 +48,7 @@ function main() {
 
     if (!out) {
         if (type == "compress") {
-            out = path.basename(filename.slice(0, filename.lastIndexOf(".")) + ".bcf");
+            out = path.basename(filename.slice(0, filename.lastIndexOf(".")) + ".bff");
         } else {
             out = path.basename(filename.slice(0, filename.lastIndexOf(".")) + ".bf");
         }
