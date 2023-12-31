@@ -8,7 +8,7 @@ function main() {
     args.shift();
     
     if (args.length == 0 || args.includes("--help") || args.includes("-h")) {
-        console.log(fs.readFileSync(path.join(__dirname, "/utils/help.txt")).toString());
+        console.log(require("./utils/help"));
         process.exit(0);
     }
 

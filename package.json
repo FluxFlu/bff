@@ -19,7 +19,7 @@
   "homepage": "https://github.com/FluxFlu/bcf#readme",
   "main": "bcf",
   "bin": {
-    "bcf": "./src/index.js"
+    "bcf": "./src/bcf.js"
   },
   "files": [
     "./src/**",
@@ -29,9 +29,11 @@
   ],
   "scripts": {
     "test": "node ./test/test.js",
-    "lint": "npx eslint ./ --global \"__dirname,process,Buffer\""
+    "lint": "npx eslint ./ --global \"__dirname,process,Buffer\"",
+    "build": "pkg ./src/bcf.js -C=Brotli"
   },
   "devDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": "^8.56.0",
+    "pkg": "^5.8.1"
   }
 }
