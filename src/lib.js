@@ -10,12 +10,12 @@ const Brain = {
         text = initConvert(text);
         text = squashMultiples(text);
         text = squashSet(text);
-        return Buffer.concat([Buffer.from("BFC:", "utf-8"), text]);
+        return Buffer.concat([Buffer.from("BFF:", "utf-8"), text]);
     },
     toPlaintext(buffer) {
-        if (buffer.slice(0, 4).toString() !== "BFC:") {
+        if (buffer.slice(0, 4).toString() !== "BFF:") {
             console.log(buffer.slice(0, 4));
-            throw "File is not in the BFC file format.";
+            throw "File is not in the BFF file format.";
         }
         buffer = toPlaintext(buffer.slice(4));
         return buffer;
