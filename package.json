@@ -1,6 +1,6 @@
 {
   "name": "braincomp",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A file format for brainfuck that supports lossless program compression.",
   "author": "Missy \"FluxFlu\"",
   "keywords": [
