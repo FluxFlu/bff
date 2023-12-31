@@ -5,7 +5,7 @@
 ![Static Badge](https://img.shields.io/badge/License-GPL--3.0-blue)
 
 # CLI Installation
-Pre-built binaries for BCF can be downloaded at [the github releases page](https://github.com/FluxFlu/bcf/releases/).
+Pre-built binaries for BCF can be downloaded at [the releases page](https://github.com/FluxFlu/bcf/releases/).
 
 It can also be installed using the NPM as follows.
 
