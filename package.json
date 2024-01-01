@@ -30,7 +30,7 @@
   "scripts": {
     "test": "node ./test/test.js",
     "lint": "npx eslint ./ --global \"__dirname,process,Buffer\"",
-    "build": "pkg ./src/bff.js -C=Brotli"
+    "build": "pkg ./src/bff.js --out-path ./build -C=Brotli"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
